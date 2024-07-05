@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 10%, #764ba2 100%);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 90%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.score {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 120px;
+    transition: background 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    word-break: break-word;
+}
+
+.score span {
+    font-size: 1.5rem;
+    color: chartreuse;
+}
+
+.score:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+.result {
+    margin-bottom: 30px;
+}
+
+.result h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.choice {
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.choice img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.choice:active img {
+    transform: scale(0.9);
+}
+
+.choice small{
+    padding: 4px 5px;
+    background-color: #7259b6;
+    border-radius: 0.2rem;
+}
+.resetbtn {
+    margin-top: 30px;
+}
+
+.resetbtn button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: #764ba2;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.resetbtn button:hover {
+    background: #5b3b8a;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .score {
+        width: 100px;
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .result h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 387px) {
+    .scoreboard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .score {
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    .choices {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+}

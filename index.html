@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shivam Singh">
+    <meta name="date" content="2024-07-05">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="scoreboard">
+            <div class="score user-score">
+                <h2>User</h2>
+                <span id="user-score">0</span>
+            </div>
+            <h2 style="place-content: center;">Vs</h2>
+            <div class="score computer-score">
+                <h2>Computer</h2>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+        <div class="result">
+            <h2 id="result-message">You have 5 Rounds, Make Your Move!</h2>
+        </div>
+        <div class="choices">
+            <div class="choice" id="rock">
+                <img src="./images/rock.png" alt="Rock">
+                <small>ROCK</small>
+            </div>
+            <div class="choice" id="paper">
+                <img src="./images/paper.png" alt="Paper">
+                <small>PAPER</small>
+            </div>
+            <div class="choice" id="scissors">
+                <img src="./images/scissor.png" alt="Scissors">
+                <small>SCISSORS</small>
+            </div>
+        </div>
+        <div class="resetbtn">
+            <button id="resetbtn">Reset Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
