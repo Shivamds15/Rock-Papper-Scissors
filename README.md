@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game
 
-This is a simple Rock Paper Scissors game implemented using HTML, CSS, and JavaScript. The game allows the user to play against the computer, keeping track of scores until either the user or the computer reaches 5 wins. The game can be reset to start over.
+This is a simple Rock Paper Scissors game implemented using HTML, CSS, and JavaScript. The game allows the user to play against the computer, keeping track of scores until either the user or the computer reaches 5 wins. The game can be reset to start over. [Click to play](https://shivamds15.github.io/Rock-Papper-Scissors/) 
 
 ![HomePage](/images/home.jpg)
 
